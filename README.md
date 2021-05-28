@@ -1,4 +1,6 @@
-# An image uploader app built using React.js in the frontend and Node.js(Express.js) in the backend
+# Project Description
+
+An image uploader app built using React.js in the frontend and Node.js(Express.js) in the backend
 
 # Getting Started with Create React App
 
