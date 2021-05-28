@@ -1,3 +1,5 @@
+# An image uploader app built using React.js in the frontend and Node.js(Express.js) in the backend
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
