@@ -1,0 +1,17 @@
+.uploading-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 400px;
+  height: 144px;
+  background: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.uploading-text {
+  color: #4f4f4f;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  margin-left: 1.5rem;
+}

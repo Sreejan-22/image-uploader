@@ -1,29 +1,13 @@
 import "./App.css";
-import image from "./assets/image.svg";
+import Home from "./components/Home/Home";
+import Uploading from "./components/Uploading/Uploading";
+import UploadSuccess from "./components/UploadSuccess/UploadSuccess";
 
 function App() {
   return (
     <div className="parent-container">
-      <div className="img-upload-box">
-        <div className="img-upload-box-heading">Upload your image</div>
-        <div className="img-upload-box-subtitle">
-          File should be JPEJ or PNG
-        </div>
-        <div className="img-upload-stage-container">
-          <div className="img-upload-stage">
-            <img src={image} alt="" className="placeholder-img" />
-            <div className="img-upload-stage-text">
-              Drag and drop your image here
-            </div>
-          </div>
-        </div>
-        <div className="or-class">Or</div>
-        <div className="upload-button-container">
-          <button className="upload-button">
-            <span className="upload-button-text">Choose a file</span>
-          </button>
-        </div>
-      </div>
+      {/* <Home /> */}
+      <Uploading />
     </div>
   );
 }

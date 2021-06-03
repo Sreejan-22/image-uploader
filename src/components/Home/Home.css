@@ -1,0 +1,82 @@
+.img-upload-box {
+  width: 402px;
+  height: 469px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.img-upload-box-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.img-upload-box-subtitle {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #828282;
+}
+
+.img-upload-stage-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.img-upload-stage {
+  width: 338px;
+  height: 218.9px;
+  background-color: #f6f8fb;
+  border: 1px dashed #97bef4;
+  box-sizing: border-box;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.placeholder-img {
+  width: 114px;
+  height: 88px;
+}
+
+.img-upload-stage-text {
+  color: #bdbdbde7;
+  font-size: 12px;
+}
+
+.or-class {
+  color: #969696;
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.upload-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.upload-button {
+  border: 0;
+  background-color: #2f80ed;
+  color: #ffffff;
+  border-radius: 8px;
+  width: 6rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+.upload-button-text {
+  font-size: 12px;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+}
