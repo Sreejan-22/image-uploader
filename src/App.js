@@ -6,8 +6,9 @@ import UploadSuccess from "./components/UploadSuccess/UploadSuccess";
 function App() {
   return (
     <div className="parent-container">
-      {/* <Home /> */}
-      <Uploading />
+      <Home />
+      {/* <Uploading /> */}
+      {/* <UploadSuccess /> */}
     </div>
   );
 }

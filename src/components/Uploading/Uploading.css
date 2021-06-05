@@ -13,5 +13,23 @@
   color: #4f4f4f;
   font-weight: 500;
   font-family: "Poppins", sans-serif;
-  margin-left: 1.5rem;
+  margin-left: 1.9rem;
+}
+
+.loading-strip {
+  width: 340px;
+  height: 6px;
+  background-color: #f2f2f2;
+  border-radius: 8px;
+  align-self: center;
+  overflow: hidden;
+}
+
+.loading-bar {
+  width: 100px;
+  height: 6px;
+  background: #2f80ed;
+  border-radius: 8px;
+  /* z-index: -1; */
+  /* overflow: hidden; */
 }
