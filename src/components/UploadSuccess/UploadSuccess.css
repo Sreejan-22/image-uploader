@@ -16,8 +16,15 @@
   color: #4f4f4f;
 }
 
+/* .uploaded-img-box {
+  width: 338px;
+  height: 224.4px;
+  border-radius: 12px;
+} */
+
 .uploaded-img {
   width: 338px;
   height: 224.4px;
   border-radius: 12px;
+  border: none;
 }

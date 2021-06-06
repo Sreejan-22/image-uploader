@@ -73,10 +73,22 @@
   width: 6rem;
   height: 2rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 12px;
+  font-weight: 500;
+  font-family: "Noto Sans", sans-serif;
+  text-align: center; */
 }
 
 .upload-button-text {
   font-size: 12px;
   font-weight: 500;
   font-family: "Noto Sans", sans-serif;
+  text-align: center;
+}
+
+#img-upload {
+  display: none;
 }
