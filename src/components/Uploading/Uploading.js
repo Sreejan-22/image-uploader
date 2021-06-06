@@ -11,7 +11,7 @@ const Uploading = () => {
       } else {
         setLoaderPosition(0);
       }
-    }, 100);
+    }, 90);
 
     return () => {
       clearInterval(counter);
