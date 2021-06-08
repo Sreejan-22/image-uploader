@@ -2,6 +2,16 @@
 
 ### An image uploader app built using React.js
 
+### The following user stories have been fulfilled:
+
+- I can choose to select an image from my folder
+
+- I can see a loader when uploading
+
+- When the image is uploaded, I can see the image and copy it
+
+- I can choose to copy to the clipboard
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
