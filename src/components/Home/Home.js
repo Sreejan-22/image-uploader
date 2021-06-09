@@ -4,9 +4,16 @@ import image from "../../assets/image.svg";
 const url = "https://api.cloudinary.com/v1_1/dv0oywqil/image/upload";
 
 const Home = ({ setLoading, setImgUrl }) => {
-  function handleSubmit(e) {
+  function preventDefault(e) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+
+  // this function is called in response to a change event instead of a submit event
+  // so we can do away with the e.preventDefault() statement
+  function handleSubmit(file) {
+    // e.preventDefault();
     setLoading(1);
-    const file = e.target.files[0];
     const formData = new FormData();
     formData.append("file", file);
     formData.append("upload_preset", "iyfn0cqh");
@@ -29,7 +36,22 @@ const Home = ({ setLoading, setImgUrl }) => {
     <div className="img-upload-box">
       <div className="img-upload-box-heading">Upload your image</div>
       <div className="img-upload-box-subtitle">File should be JPEJ or PNG</div>
-      <div className="img-upload-stage-container">
+      <div
+        className="img-upload-stage-container"
+        onDragEnter={(e) => {
+          preventDefault(e);
+        }}
+        onDragEnd={(e) => {
+          preventDefault(e);
+        }}
+        onDragOver={(e) => {
+          preventDefault(e);
+        }}
+        onDrop={(e) => {
+          preventDefault(e);
+          handleSubmit(e.dataTransfer.files[0]);
+        }}
+      >
         <div className="img-upload-stage">
           <img src={image} alt="" className="placeholder-img" />
           <div className="img-upload-stage-text">
@@ -47,7 +69,7 @@ const Home = ({ setLoading, setImgUrl }) => {
           type="file"
           accept="image"
           id="img-upload"
-          onChange={(e) => handleSubmit(e)}
+          onChange={(e) => handleSubmit(e.target.files[0])}
         />
       </div>
     </div>
