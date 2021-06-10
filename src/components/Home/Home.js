@@ -1,7 +1,10 @@
 import "./Home.css";
 import image from "../../assets/image.svg";
+require("dotenv").config();
 
-const url = "https://api.cloudinary.com/v1_1/dv0oywqil/image/upload";
+const url = process.env.REACT_APP_UPLOAD_URL;
+
+console.log(url);
 
 const Home = ({ setLoading, setImgUrl }) => {
   function preventDefault(e) {
@@ -16,7 +19,7 @@ const Home = ({ setLoading, setImgUrl }) => {
     setLoading(1);
     const formData = new FormData();
     formData.append("file", file);
-    formData.append("upload_preset", "iyfn0cqh");
+    formData.append("upload_preset", process.env.REACT_APP_UPLOAD_PRESET);
 
     fetch(url, {
       method: "POST",

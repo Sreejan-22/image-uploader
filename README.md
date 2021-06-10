@@ -4,13 +4,15 @@
 
 ### The following user stories have been fulfilled:
 
-- I can choose to select an image from my folder
+- User can drag and drop an image to upload it
 
-- I can see a loader when uploading
+- User can choose to select an image from user's folder
 
-- When the image is uploaded, I can see the image and copy it
+- User can see a loader when image is uploading
 
-- I can choose to copy to the clipboard
+- When the image is uploaded, user can see the image and copy it
+
+- User can choose to copy to the clipboard
 
 # Getting Started with Create React App
 
