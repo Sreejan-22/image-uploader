@@ -1,7 +1,7 @@
 import "./UploadSuccess.css";
 // import done from "../../assets/done.svg";
 import SuccessIcon from "./SuccessIcon";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const UploadSuccess = ({ imgUrl }) => {
   const [showAlert, setShowAlert] = useState(false);

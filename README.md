@@ -2,6 +2,8 @@
 
 ### An image uploader app built using React.js
 
+Visit the website: https://sreejan-22.github.io/image-uploader/
+
 ### The following user stories have been fulfilled:
 
 - User can drag and drop an image to upload it
