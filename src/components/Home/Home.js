@@ -4,8 +4,6 @@ require("dotenv").config();
 
 const url = process.env.REACT_APP_UPLOAD_URL;
 
-console.log(url);
-
 const Home = ({ setLoading, setImgUrl }) => {
   function preventDefault(e) {
     e.preventDefault();

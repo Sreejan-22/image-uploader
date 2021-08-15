@@ -5,6 +5,20 @@ import { useState } from "react";
 
 const UploadSuccess = ({ imgUrl }) => {
   const [showAlert, setShowAlert] = useState(false);
+
+  function copyUrl(e) {
+    e.preventDefault();
+    navigator.clipboard
+      .writeText(imgUrl)
+      .then(() => {
+        setShowAlert(true);
+        setTimeout(() => {
+          setShowAlert(false);
+        }, 2000);
+      })
+      .catch((err) => console.log(err));
+  }
+
   return (
     <div className="upload-success-box">
       <SuccessIcon />
@@ -17,17 +31,7 @@ const UploadSuccess = ({ imgUrl }) => {
           value={`  ${imgUrl}`}
           className="url-text-input"
         />
-        <button
-          className="copy-btn"
-          onClick={(e) => {
-            e.preventDefault();
-            setShowAlert(true);
-            setTimeout(() => {
-              setShowAlert(false);
-            }, 2000);
-            navigator.clipboard.writeText(imgUrl);
-          }}
-        >
+        <button className="copy-btn" onClick={(e) => copyUrl(e)}>
           Copy Link
         </button>
       </form>
