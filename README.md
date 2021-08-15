@@ -2,7 +2,7 @@
 
 ### An image uploader app built using React.js
 
-View it live here: https://sreejan-22.github.io/image-uploader/
+View it live here: https://react-image-uploader-app.netlify.app/
 
 ### The following user stories have been fulfilled:
 
